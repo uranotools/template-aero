@@ -3,7 +3,7 @@
   "apiVersion": 2,
   "id": "urano-aero",
   "name": "Urano Aero",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ventana al estilo Windows XP, lista de contactos tipo Messenger y paisaje Frutiger Aero. ES/EN.",
   "font": {
     "file": "fonts/Nunito-Variable.woff2"
@@ -162,7 +162,26 @@
   ],
   "presentation": {
     "scrollbars": "native",
-    "userBubble": "msn",
-    "composer": "msn"
+    "chrome": {
+      "bubble": "67 87% 69%",
+      "bubbleForeground": "96 48% 12%",
+      "field": "85 67% 82%",
+      "fieldForeground": "96 48% 12%",
+      "fieldBorder": "96 42% 54%",
+      "send": "214 76% 48%",
+      "sendForeground": "0 0% 100%",
+      "canvas": "204 78% 88%",
+      "canvasEnd": "100 52% 65%",
+      "agent": "full",
+      "nudge": true,
+      "header": "contact",
+      "dark": {
+        "field": "146 32% 17%",
+        "fieldForeground": "84 45% 88%",
+        "fieldBorder": "146 36% 32%",
+        "canvas": "214 48% 11%",
+        "canvasEnd": "214 48% 11%"
+      }
+    }
   }
 }
