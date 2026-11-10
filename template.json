@@ -1,0 +1,168 @@
+{
+  "kind": "template",
+  "apiVersion": 2,
+  "id": "urano-aero",
+  "name": "Urano Aero",
+  "version": "1.0.0",
+  "description": "Ventana al estilo Windows XP, lista de contactos tipo Messenger y paisaje Frutiger Aero. ES/EN.",
+  "font": {
+    "file": "fonts/Nunito-Variable.woff2"
+  },
+  "theme": {
+    "light": {
+      "background": "204 78% 96%",
+      "foreground": "216 42% 14%",
+      "card": "0 0% 100%",
+      "card-foreground": "216 42% 14%",
+      "popover": "0 0% 100%",
+      "popover-foreground": "216 42% 14%",
+      "primary": "221 73% 46%",
+      "primary-foreground": "0 0% 100%",
+      "secondary": "206 72% 93%",
+      "secondary-foreground": "216 42% 18%",
+      "muted": "206 40% 93%",
+      "muted-foreground": "215 16% 36%",
+      "accent": "196 92% 42%",
+      "accent-foreground": "210 60% 10%",
+      "border": "212 42% 74%",
+      "input": "210 36% 80%",
+      "ring": "221 73% 42%",
+      "sidebar-background": "204 80% 97%",
+      "sidebar-foreground": "216 40% 16%",
+      "sidebar-primary": "221 73% 48%",
+      "sidebar-primary-foreground": "0 0% 100%",
+      "sidebar-accent": "208 78% 90%",
+      "sidebar-accent-foreground": "221 70% 28%",
+      "sidebar-border": "212 38% 76%",
+      "sidebar-ring": "221 73% 48%"
+    },
+    "dark": {
+      "background": "216 52% 8%",
+      "foreground": "198 45% 96%",
+      "card": "216 42% 12%",
+      "card-foreground": "198 45% 96%",
+      "popover": "216 40% 11%",
+      "popover-foreground": "198 45% 96%",
+      "primary": "204 88% 62%",
+      "primary-foreground": "216 60% 8%",
+      "secondary": "216 32% 16%",
+      "secondary-foreground": "198 40% 94%",
+      "muted": "216 28% 16%",
+      "muted-foreground": "208 16% 74%",
+      "accent": "174 62% 48%",
+      "accent-foreground": "216 60% 8%",
+      "border": "212 28% 28%",
+      "input": "216 24% 22%",
+      "ring": "196 90% 62%",
+      "sidebar-background": "218 48% 7%",
+      "sidebar-foreground": "198 40% 94%",
+      "sidebar-primary": "204 88% 62%",
+      "sidebar-primary-foreground": "216 60% 8%",
+      "sidebar-accent": "214 36% 16%",
+      "sidebar-accent-foreground": "196 80% 78%",
+      "sidebar-border": "214 28% 22%",
+      "sidebar-ring": "196 90% 62%"
+    }
+  },
+  "layout": {
+    "direction": "row",
+    "children": [
+      {
+        "slot": "sidebar"
+      },
+      {
+        "direction": "column",
+        "children": [
+          {
+            "slot": "header"
+          },
+          {
+            "slot": "subheader"
+          },
+          {
+            "direction": "row",
+            "children": [
+              {
+                "slot": "content"
+              },
+              {
+                "slot": "assistant"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "surfaces": {
+    "navigation": "studio",
+    "header": "studio",
+    "chat": "studio"
+  },
+  "components": {
+    "navigation": "aero-navigation",
+    "header": "aero-header",
+    "history": "aero-history",
+    "welcome": "aero-welcome"
+  },
+  "loading": {
+    "label": "Conectando…",
+    "labelEn": "Signing in…"
+  },
+  "views": [
+    {
+      "id": "aero-navigation",
+      "title": "Aero · Navegación",
+      "bundle": "ui/bundle.js",
+      "capabilities": [
+        "appearance.read",
+        "surface.read",
+        "surface.act"
+      ]
+    },
+    {
+      "id": "aero-header",
+      "title": "Aero · Cabecera",
+      "bundle": "ui/bundle.js",
+      "capabilities": [
+        "appearance.read",
+        "surface.read",
+        "surface.act"
+      ]
+    },
+    {
+      "id": "aero-history",
+      "title": "Aero · Historial",
+      "bundle": "ui/bundle.js",
+      "capabilities": [
+        "appearance.read",
+        "surface.read",
+        "surface.act"
+      ]
+    },
+    {
+      "id": "aero-welcome",
+      "title": "Aero · Bienvenida",
+      "bundle": "ui/bundle.js",
+      "capabilities": [
+        "appearance.read",
+        "surface.read",
+        "surface.act"
+      ]
+    },
+    {
+      "id": "aero-forge",
+      "title": "Aero · Taller",
+      "bundle": "ui/bundle.js",
+      "capabilities": [
+        "appearance.read",
+        "navigation.open"
+      ]
+    }
+  ],
+  "presentation": {
+    "scrollbars": "native",
+    "userBubble": "msn",
+    "composer": "msn"
+  }
+}
